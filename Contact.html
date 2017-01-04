@@ -35,6 +35,7 @@
       <p>This doesn't really work, but it's an example of a form. Easy, man. Relax, man.</p>
       <div class="col-md-6">
         <form>
+
           <div class="form-group">
             <label for="nameInput">Your Name</label>
             <input type="text" 
@@ -42,14 +43,41 @@
                   class="form-control"
                   placeholder="name" />
           </div>
+
           <div class="form-group">
           <label  for="emailInput">Email</label>
+          <div>
            <input type="email" 
                   name="emailInput"      
                   class="form-control"
                   placeholder="your email"
           <input />
           </div>
+          </div>
+
+          <div class="form-group">
+            <label class="control-label">Favorite</label>
+            <div>
+              <div class="btn-group btn-group-sm" data-toggle="buttons">
+              <label class="btn btn-success"><input type="radio">The Dude</label>
+              <label class="btn btn-success"><input type="radio"> Donny</label>
+              <label class="btn btn-success"><input type="radio"> Maude</label>
+              <div class="btn-group btn-group-sm">
+            <button class="btn btn-success" data-toggle="dropdown">Other <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+              <li><a href="#" tabindex="-1">Walter</a></li>
+              <li><a href="#" tabindex="-1">Bunny</a></li>
+              <li class="divider">
+              <li class="disabled"><a href="#" tabindex="-1">The Big Lebowski</a></li>
+            </ul>
+          </div>
+              </div>
+            </div>
+          </div>
+
+          
+
+
           <div class="form-group">
           <label>Reason</label>
           <select class="form-control">
@@ -59,6 +87,7 @@
             <option>I am lost</option>
           </select>
           </div>
+
           <div class="form-group">
           <label>Message</label>
           <textarea cols="40" rows="6" class="form-control"></textarea>
